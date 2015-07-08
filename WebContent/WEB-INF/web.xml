@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <welcome-file-list>
+	<welcome-file>
+            index.html
+        </welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+      <servlet-name>Hello</servlet-name>
+      <servlet-class>Hello</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>Hello</servlet-name>
+      <url-pattern>/Hello</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+      <servlet-name>FileWrite</servlet-name>
+      <servlet-class>FileWrite</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>FileWrite</servlet-name>
+      <url-pattern>/FileWrite</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+      <servlet-name>DBReadWrite</servlet-name>
+      <servlet-class>DBReadWrite</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>DBReadWrite</servlet-name>
+      <url-pattern>/DBReadWrite</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+      <servlet-name>SessionCookie</servlet-name>
+      <servlet-class>SessionCookie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>SessionCookie</servlet-name>
+      <url-pattern>/SessionCookie</url-pattern>
+    </servlet-mapping>
+</web-app>
